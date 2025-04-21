@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<!--使用服务器数据库-->
+		<!--<property name="jdbcUrl">jdbc:mysql://39.101.184.154:3306/xf?useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;characterEncoding=utf-8&amp;autoReconnect=true</property>-->
+		<!--使用本地数据库-->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/xf?useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;characterEncoding=utf-8&amp;autoReconnect=true</property>
+		<property name="user">root</property>
+		<!--<property name="password">123456</property>-->
+		<property name="password">root</property>
+		<property name="acquireIncrement">10</property>
+		<property name="initialPoolSize">15</property>
+		<property name="maxPoolSize">150</property>
+		<property name="maxIdleTime">90</property>
+		<property name="minPoolSize">10</property>
+	</default-config>
+</c3p0-config>
+<!--注释-->

@@ -1,0 +1,78 @@
+#main {
+    max-width: 80vm;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+    font-family: CustomFont;
+    src: url('/ttf/font.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #bfbfbf, #e6e6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: CustomFont, Arial, sans-serif;
+    font-size: 85px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #F3896B;
+    text-align: center;
+    text-shadow: 1px -1px #fff, -1px 1px #999, -10px 10px 5px #80808080;
+}
+
+.container {
+    width: 750px;
+    height: 480px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.container .carousel img {
+    width: 750px;
+    height: 480px;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+.indicator span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.indicator span.active{
+    background: #999;
+    border-color: #fff;
+}
